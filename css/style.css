@@ -35,7 +35,7 @@ a{
 .active svg:active{
 	fill: #EC5118;
 }
-/* Header Section */
+/*--------------- Header Section ---------------*/
 .page-heeder{
 	position: absolute;
 	width: 100%;
@@ -151,7 +151,7 @@ a{
 }
 .about-us__section img{
 	position: absolute;
-	right: 0;
+	right: 10%;
 	top: 30%;
 }
 
@@ -168,6 +168,21 @@ a{
 	justify-content: space-between;
 	align-items: center;
     flex-wrap: wrap;
+}
+.tour-1{
+	background-image: url(../img/slider-img1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tour-2{
+	background-image: url(../img/slider-img2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tour-3{
+	background-image: url(../img/slider-img3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .popular__tour{
 	position: relative;
@@ -206,20 +221,68 @@ a{
 }
 .popular__tour-info .title{
 	font-size: 26px;
-	margin-bottom: 8px;
+	margin-bottom: 12px;
 }
-.tour-1{
-	background-image: url(../img/slider-img1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+.popular__tour-info span::after{
+	content: "|";
+	padding: 0 12px;
 }
-.tour-2{
-	background-image: url(../img/slider-img2.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+.popular__tour-info span:last-child::after{
+	content: "";
+	display: none;
 }
-.tour-3{
-	background-image: url(../img/slider-img3.jpg);
-	background-repeat: no-repeat;
+.tour-info__detail{
+	margin-bottom: 15px;
+}
+.popular__tour-info .level{
+	position: relative;
+	padding-left: 22px;
+}
+.popular__tour-info .level::before{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.popular__tour-info .circle-half::before{
+	content: url(../img/icons/lvl2.png);
+	left: -3px;
+}
+.popular__tour-info .circle-quater::before{
+	content: url(../img/icons/lvl1.png);
+}
+
+/*--------------------Tour Section-----------------------------*/
+.tour{
+	background-image: url(../img/plan-img.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
+
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	text-align: center;
+	
+}
+.tour .title,
+.tour .subtitle{
+	color: #FCFCFC;
+	margin-bottom: 25px;
+}
+.tour__table{
+	margin: 0 auto;
+	color: #FCFCFC;
+	margin-bottom: 50px;
+	border-collapse: collapse;
+	width: 830px;
+}
+.table-head th{
+	font-weight: 100;
+	color: #A7AEB4;
+	border-collapse: collapse;
+	border-bottom: 1px solid #45545E;
+}
+
+.tour__table tr{
+	border-bottom: 1px solid #45545E;
+	height: 60px;
 }
