@@ -366,11 +366,11 @@ button.slick-prev.slick-arrow:hover{
 	flex-direction: row;
 	justify-content: space-between;
 }
-
 .blog__aside{
 	flex-basis: 400px;
+	flex-shrink: 0;
+	flex-grow: 0;
 }
-
 .aside__news{
 	padding-top: 25px;
 	padding-bottom: 22px;
@@ -409,6 +409,8 @@ button.slick-prev.slick-arrow:hover{
 	display: flex;
 	flex-direction: column;
 	flex-basis: 60%;
+	flex-shrink: 0;
+	flex-grow: 0;
 }
 .blog__aside__news-box .aside__news:last-child{
 	margin-bottom: 30px;
@@ -441,7 +443,6 @@ button.slick-prev.slick-arrow:hover{
 	overflow: hidden;
 }
 .contact-form__info{
-
 	max-width: 525px;
 	flex-shrink: 0;
 

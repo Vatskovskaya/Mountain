@@ -18,6 +18,25 @@
     .slick-list {
         margin: 0px -15px;
     }
+    .news__article{
+        flex-basis: 55%;
+    }
+    .blog .title {
+        margin-bottom: 65px;
+    }
+    .blog__aside{
+        margin-right: 25px;
+    }
+    .blog__aside__news-box .aside__news:last-child {
+        margin-bottom: 43px;
+    }
+    .contact-form__info {
+        max-width: 450px;
+    }
+    .contact-form__img {
+        flex-shrink: 1;
+        width: 53%;
+    }
 }
 /*1024px - 768px - @media (max-width: 1024px) {*/
  @media (max-width: 1024px){
@@ -65,7 +84,50 @@
     .slick-list {
         margin: 0px -10px;
     }
-  
+    .blog{
+        padding-top: 100px;
+        padding-bottom: 105px;
+    }
+    .aside__news{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .aside__news h4 {
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .blog__aside {
+        flex-basis: 35%;
+    }
+    .news__article {
+        flex-basis: 65%;
+        flex-shrink: 1;
+    }
+    .contact-form {
+        background-color: inherit;
+        background-image: url(../img/img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .contact-form__img {
+        display: none;
+    }
+    .contact-form__info {
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+
+        padding: 25px;
+        text-align: center;
+    }
+    .contact-us__form {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .info-box {
+        column-gap: 35px;
+    }
 }
 /*768px - 480px - @media (max-width: 768px) */
 @media (max-width: 900px){
@@ -130,7 +192,36 @@
         height: 60px;
         font-size: 18px;
     }
-   
+    .news__article .subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .blog {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    .blog .title {
+        margin-bottom: 45px;
+    }
+    .info{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .info-box__contacts span{
+
+        font-size: 16px;
+    
+        margin-bottom: 10px;
+    }
+    .info-box__contacts a{
+        font-size: 18px;
+        line-height: 31px;
+    
+        color: #061B28;
+    
+        margin-bottom: 22px;
+    }
 }
 @media (max-width: 768px){
     .title{
@@ -168,6 +259,34 @@
     .tour .subtitle{
         margin-bottom: 15px;
     }
+    .blog .title {
+        margin-bottom: 30px;
+    }
+    .blog__info {
+        flex-direction: column;
+    }
+    .blog__aside__news-box{
+        display: flex;
+        overflow-x: scroll;
+    }
+    .aside__news {
+        flex-basis: 200px;
+        flex-shrink: 0;
+    }
+    .blog__aside__news-box .aside__news:last-child {
+        margin-bottom: 0;
+    }
+    .blog__aside {
+        margin-right: 0px;
+    }
+    .blog .orange-btn{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .news__article {
+        flex-basis: 100%;
+        flex-shrink: 0;
+    }
 } 
 @media (max-width: 530px){
     .tour__table{
@@ -182,10 +301,10 @@
 /*480px - 320px - @media (max-width: 480px)*/
 @media (max-width: 480px){
     .title{
-        font-size: 21px;
+        font-size: 22px;
     }
     .subtitle{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
     }
     .start{
@@ -223,6 +342,38 @@
         font-size: 15px;
     }
     .tour__table tr{
+        font-size: 14px;
+    }
+    .news__article .subtitle {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .news__article h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .contact-form{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .contact-form .container{
+        padding: 0;
+    }
+    .contact-form__info .title{
+        margin-bottom: 20px;
+    }
+    .contact-form__info .subtitle{
+        margin-bottom: 15px;
+    }
+    .contact-us__form {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .contact-form br{
+        display: none;
+    }
+    .contact-form p{
         font-size: 14px;
     }
 }
