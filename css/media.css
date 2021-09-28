@@ -65,7 +65,7 @@
     .slick-list {
         margin: 0px -10px;
     }
-
+  
 }
 /*768px - 480px - @media (max-width: 768px) */
 @media (max-width: 900px){
@@ -118,6 +118,18 @@
         max-width: 100%;
         margin: 0 auto;
     }
+    .tour{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .tour__table{
+        margin-bottom: 40px;
+        width: 700px;
+    }
+    .tour__table tr{
+        height: 60px;
+        font-size: 18px;
+    }
    
 }
 @media (max-width: 768px){
@@ -143,9 +155,30 @@
         margin: 0px -6px;
     }
     .popular__box {
-        max-width: 450px;
+        max-width: 550px;
+    }
+    .tour{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    .tour__table{
+        width: 500px;
+    }
+    .tour .title,
+    .tour .subtitle{
+        margin-bottom: 15px;
     }
 } 
+@media (max-width: 530px){
+    .tour__table{
+        width: 430px;
+    }
+    .tour__table tr{
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
 /*480px - 320px - @media (max-width: 480px)*/
 @media (max-width: 480px){
     .title{
@@ -170,5 +203,26 @@
     button.slick-next.slick-arrow,
     button.slick-prev.slick-arrow{
         bottom: -55px;
+    }
+    
+    .tour .container{
+        padding: 0 2px;
+    }
+    .tour{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .tour .title,
+    .tour .subtitle{
+        margin-bottom: 10px;
+    }
+    .tour__table{
+        width: 330px;
+    }
+    .table-head th{
+        font-size: 15px;
+    }
+    .tour__table tr{
+        font-size: 14px;
     }
 }
