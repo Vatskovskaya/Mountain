@@ -209,18 +209,15 @@
         padding-bottom: 90px;
     }
     .info-box__contacts span{
-
-        font-size: 16px;
+        font-size: 14px;
     
         margin-bottom: 10px;
     }
     .info-box__contacts a{
-        font-size: 18px;
-        line-height: 31px;
+        font-size: 16px;
+        line-height: 24px;
     
-        color: #061B28;
-    
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 768px){
@@ -287,6 +284,47 @@
         flex-basis: 100%;
         flex-shrink: 0;
     }
+    .info{
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .info-box {
+        column-gap: 0px;
+        flex-direction: column;
+    }
+    .info-box__contacts h2{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .info-box__contacts{
+        order: 1;
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    .info-box iframe{
+        order: 2;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .info-box__contacts span{
+        font-size: 14px;
+    
+        margin-bottom: 1px;
+    }
+    .info-box__contacts a{
+        font-weight: 500;
+        font-size: 16px;
+    
+        margin-bottom: 22px;
+    }
+    .page__footer .container {
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .page__footer p{
+        order: 3;
+    }
 } 
 @media (max-width: 530px){
     .tour__table{
@@ -336,7 +374,7 @@
         margin-bottom: 10px;
     }
     .tour__table{
-        width: 330px;
+        width: 310px;
     }
     .table-head th{
         font-size: 15px;
