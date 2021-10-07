@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  $('.header__burger').click(function(event) {
+    $('.header__burger,.header__navigation__list').toggleClass('active');
+  })
     $('.popular__box').slick({
     arrows: true,
     slidesToShow: 3,

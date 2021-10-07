@@ -56,6 +56,9 @@ img{
 	color: #EC5118;
 	box-shadow: inset 0 0 0 3px #EC5118;
 }
+.header__burger{
+	display: none;
+}
 /*--------------- Header Section ---------------*/
 .page-heeder{
 	position: absolute;
@@ -131,6 +134,9 @@ img{
 	background-color: #fff;
 	border-radius: 50%;
 	opacity: 50%;
+}
+.contact-phone__burger{
+	display: none;
 }
 /* Start Section */
 .start{
