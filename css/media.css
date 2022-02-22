@@ -401,7 +401,6 @@
         height: 50px;
         font-size: 16px;
     }
-
     .popup__login-container{
         width: 480px;
     }
@@ -423,6 +422,12 @@
     .start .title{
         font-size: 50px;
         line-height: 100px;
+    }
+    .header__info {
+        column-gap: 5px;
+    }
+    .header-icons {
+        column-gap: 18px;
     }
     .about-us{
         padding-top: 40px;
@@ -489,17 +494,17 @@
         width: 400px;
         padding: 0 15px;
     }
-    @media (max-width: 420px) {
-        .popup__login-container{
-            width: 100%;
-            padding: 0 15px;
-        }
-        .popup__login{
-            width: 100%;
-        }
-        .close_popup {
-            padding: 0;
-        }
-    }
+}
 
+@media (max-width: 420px) {
+    .popup__login-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .popup__login{
+        width: 100%;
+    }
+    .close_popup {
+        padding: 0;
+    }
 }
