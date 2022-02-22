@@ -37,15 +37,23 @@ $(document).ready(function(){
   });
   $(document).on('click', '.header__login', function (event) {
     event.preventDefault();
-    $('.popup-wrapper').toggleClass('active');
-  
+    $('.popup__login-container').toggleClass('active');
+    $('.popup-overlay').toggleClass('active');
     $('.wrapper').css('filter','blur(5px)');
 
   });
 
   $(document).on('click', '.close_popup', function (event) {
     event.preventDefault();
-    $('.popup-wrapper').removeClass('active');
+    $('.popup__login-container').removeClass('active');
+    $('.popup-overlay').removeClass('active');
+    $('.wrapper').css('filter','none');
+  });
+
+  $(document).on('click', '.popup-overlay', function (event) {
+    event.preventDefault();
+    $('.popup__login-container').removeClass('active');
+    $('.popup-overlay').removeClass('active');
     $('.wrapper').css('filter','none');
   });
 });

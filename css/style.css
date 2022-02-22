@@ -600,8 +600,21 @@ button.slick-prev.slick-arrow:hover{
 }
 
 /* ------------------Login popup---------------- */
-.popup-wrapper{
+.popup-overlay{
 	background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+	
+	display: none;
+}
+.popup-overlay.active{
+	display: block;
+}
+.popup-wrapper{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -611,8 +624,8 @@ button.slick-prev.slick-arrow:hover{
 
 	display: none;
 }
-.popup-wrapper.active{
-	display: block;
+.popup__login-container.active{
+	display: flex;
 }
 .popup__login-container{
 	position: fixed;
@@ -623,7 +636,7 @@ button.slick-prev.slick-arrow:hover{
 	background-color: #061B28;
 	z-index: 2;
 
-	display: flex;
+	display: none;
 	flex-direction: column;
 }
 .popup__login{
