@@ -226,7 +226,7 @@
         flex-direction: column;
         top: 80px;
         right: -100%;
-        background-color: rgba(83, 111, 132, 0.705);
+        background-color: rgba(83, 111, 132, 0.925);
         border: 1px solid rgba(255, 255, 255, 0.397);
         width: 250px;
         transition: right 1s;
@@ -292,9 +292,6 @@
     .header__info a{
         margin-right: 14px;
     }
-
-
-
     .start{
         padding-top: 130px;
         padding-bottom: 135px;
@@ -424,7 +421,7 @@
         line-height: 100px;
     }
     .header__info {
-        column-gap: 5px;
+        column-gap: 15px;
     }
     .header-icons {
         column-gap: 18px;
