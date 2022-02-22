@@ -224,8 +224,9 @@
         flex-direction: column;
         top: 80px;
         right: -100%;
-        background-color: rgba(83, 111, 132, 0.925);
+        background-color: rgba(83, 111, 132, 0.8);
         border: 1px solid rgba(255, 255, 255, 0.397);
+        backdrop-filter: blur(5px);
         width: 250px;
         transition: right 1s;
     }
@@ -390,6 +391,10 @@
 } 
 
 @media (max-width: 530px){
+    .header__navigation__list{
+        width: 100%;
+        text-align: center;
+    }
     .tour__table{
         width: 430px;
     }
@@ -399,18 +404,6 @@
     }
     .popup__login-container{
         width: 480px;
-    }
-    .header__navigation__list{
-        position: absolute;
-        flex-direction: column;
-        top: 80px;
-        right: -100%;
-        background-color: rgba(83, 111, 132, 0.925);
-        border: 1px solid rgba(255, 255, 255, 0.397);
-        width: 100%;
-        width: 100%;
-        text-align: center;
-        transition: right 1s;
     }
 }
 
