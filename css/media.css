@@ -209,8 +209,6 @@
         font-size: 16px;
         line-height: 25px;
     }
-
-
     .header__info .contact-phone{
         display: none;
     }
@@ -390,6 +388,7 @@
         order: 3;
     }
 } 
+
 @media (max-width: 530px){
     .tour__table{
         width: 430px;
@@ -400,6 +399,18 @@
     }
     .popup__login-container{
         width: 480px;
+    }
+    .header__navigation__list{
+        position: absolute;
+        flex-direction: column;
+        top: 80px;
+        right: -100%;
+        background-color: rgba(83, 111, 132, 0.925);
+        border: 1px solid rgba(255, 255, 255, 0.397);
+        width: 100%;
+        width: 100%;
+        text-align: center;
+        transition: right 1s;
     }
 }
 
@@ -434,7 +445,6 @@
     button.slick-prev.slick-arrow{
         bottom: -55px;
     }
-    
     .tour .container{
         padding: 0 2px;
     }
